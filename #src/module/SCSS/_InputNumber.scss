@@ -1,0 +1,73 @@
+//Кастоматизацый input number InputNumber //!Сниппет "!InputNumber"
+.quantity-block {
+	input[type="number"]::-webkit-inner-adjust-hue-button,
+	input[type="number"]::-webkit-outer-adjust-hue-button {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		margin: 0;
+	}
+}
+.quantity-block {
+	position: relative;
+	.quantity-arrow {
+		position: absolute;
+		right: 0;
+		top: 12px;
+		&-minus,
+		&-plus {
+			transform: rotate(90deg);
+			padding: 0;
+			margin-bottom: -8px;
+		}
+	}
+}
+.quantity-num input[type="number"] {
+	-moz-appearance: textfield;
+}
+.quantity-block {
+	margin: auto;
+	font-size: 20px;
+}
+.quantity-arrow-minus,
+.quantity-arrow-plus {
+	cursor: pointer;
+	font-size: 20px;
+	padding: 5px 12px;
+	width: 40px;
+	box-sizing: border-box;
+	border-radius: 4px;
+	outline: none;
+}
+.quantity-num {
+	font-size: 20px;
+	padding: 5px 10px;
+	border-radius: 4px;
+	outline: none;
+}
+
+.custom-select {
+	.select {
+		// position: relative;
+		// display: inline-block;
+	}
+	&:after {
+		content: ">";
+		padding: 0 8px;
+		position: absolute;
+		right: 19px;
+		top: 7px;
+		z-index: 1;
+		font-weight: bold;
+		font-size: 20px;
+		pointer-events: none;
+		box-sizing: border-box;
+		transform: rotate(90deg);
+	}
+	select {
+		padding-right: 25px;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+	}
+}

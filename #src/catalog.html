@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html', {
+"title":"Каталог - gofree",
+})
+<!-- <link rel="stylesheet" href="libs/nouislider.css"> -->
+
+
+<body>
+	<div class="wrapper" id="wrapper">
+
+
+		@@include('_header.html', {})
+		<ul class="container breadcrumbs">
+			<li class="breadcrumbs__item breadcrumbs__item_home">
+				<a href="/"><i class="breadcrumbs__icon icon-home"></i></a>
+			</li>
+			<li class="breadcrumbs__item breadcrumbs__item_active">
+				Каталог
+			</li>
+		</ul>
+		<main class="container">
+			<h1>Каталог</h1>
+			<div class="row catalog">
+				<section class="catalog_filter filter">
+					<div class="filter__selected selected">
+						<div class="selected__h">Вы выбрали:</div>
+						<ul class="selected__list">
+							<li class="selected__item">
+								<div class="selected__name">Цена:</div>
+								<div class="selected__value">до 10 546 ₽</div>
+								<div class="selected__del">
+									<i class="selected__icon icon-close"></i>
+								</div>
+
+							</li>
+							<li class="selected__item">
+								<div class="selected__name">Бренд:</div>
+								<div class="selected__value">Indesit</div>
+								<div class="selected__del">
+									<i class="selected__icon icon-close"></i>
+								</div>
+
+							</li>
+							<li class="selected__item">
+								<div class="selected__name">Цена:</div>
+								<div class="selected__value">Белый </div>
+								<div class="selected__del">
+									<i class="selected__icon icon-close"></i>
+								</div>
+
+							</li>
+
+						</ul>
+						<a href="##">Очистить все</a>
+
+					</div>
+
+					<form class="filter__form">
+						
+						<div class="filter__item">
+							<div class="filter__head accordion accordion_active">
+								<h5 class="filter__h">Цена</h5>
+								<div class="accordion__polygon">
+									<i class="accordion__icon icon-polygon"></i>
+								</div>
+
+							</div>
+
+							<div class="panel" style="max-height: fit-content;">
+								<div class="filter__price">
+									<div class="filter__price-input">
+										<div>от</div>
+										<input type="text" id="inputNumberMin" class="form-input">
+										<div>до</div>
+										<input type="text" id="inputNumberMax" class="form-input">
+									</div>
+									<div id="sliderR"></div>
+								
+								</div>
+								
+							</div>
+						</div>
+						<div class="filter__item">
+							<div class="filter__head accordion">
+								<h5 class="filter__h">Бренд</h5>
+								<div class="accordion__polygon">
+									<i class="accordion__icon icon-polygon"></i>
+								</div>
+
+							</div>
+
+							<div class="panel">
+								<input type="text" class="form-input filter__input" placeholder="Поиск">
+								<div class="filter__checkbox checkbox">
+									<input type="checkbox" id="vol5" name="cc">
+									<label for="vol5"><span></span></label>
+									Tarimus
+								</div>
+								<div class="filter__checkbox checkbox">
+									<input type="checkbox" id="vol6" name="cc1">
+									<label for="vol6"><span></span></label>
+									Sumsung
+								</div>
+								<a href="##">Показать все</a>
+							</div>
+						</div>
+						<div class="filter__item">
+							<div class="filter__head accordion">
+								<h5 class="filter__h">Бренд</h5>
+								<div class="accordion__polygon">
+									<i class="accordion__icon icon-polygon"></i>
+								</div>
+
+							</div>
+							<div class="panel">
+								<input type="text" class="form-input filter__input" placeholder="Поиск">
+								<div class="filter__checkbox checkbox">
+									<input type="checkbox" id="vol5" name="cc">
+									<label for="vol5"><span></span></label>
+									Tarimus
+								</div>
+								<div class="filter__checkbox checkbox">
+									<input type="checkbox" id="vol6" name="cc1">
+									<label for="vol6"><span></span></label>
+									Sumsung
+								</div>
+								<a href="##">Показать все</a>
+							</div>
+						</div>
+
+					</form>
+
+				</section>
+				<section class="catalog__products">
+					<div class="row catalog__row">
+						<div class="catalog__item">
+							@@include('_card-product.html')
+						</div>
+						<div class="catalog__item">
+							@@include('_card-product.html')
+						</div>
+						<div class="catalog__item">
+							@@include('_card-product.html')
+						</div>
+						<div class="catalog__item">
+							@@include('_card-product.html')
+						</div>
+						<div class="catalog__item">
+							@@include('_card-product.html')
+						</div>
+					</div>
+					<div class="pagination">
+						<a href="##" class="pagination__btn pagination__btn_prev">
+							<i class="pagination__icon icon-polygon"></i>
+						</a>
+						<ul class="pagination__list">
+							<li class="pagination__item pagination__item_active">1</li>
+							<li class="pagination__item"><a href="##">2</a></li>
+							<li class="pagination__item"><a href="##">3</a></li>
+						</ul>
+						<a href="##" class="pagination__btn pagination__btn_next">
+							<i class="pagination__icon icon-polygon"></i>
+						</a>
+					</div>
+				</section>
+			</div>
+		</main>
+
+
+
+		@@include('_footer.html', {})
+		<!-- @//@include('_modal.html') -->
+
+	</div>
+
+
+	<script type="text/javascript" src="libs/swiper.js"></script>
+	<script type="text/javascript" src="libs/nouislider.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+
+
+
+</body>
+
+</html>

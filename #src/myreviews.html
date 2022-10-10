@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html', {
+"title":"Мои отзывы - gofree",
+})
+
+<body>
+   <div class="wrapper" id="wrapper">
+
+      @@include('_header.html', {})
+
+      <main class="container personaldata">
+         <div class="row personaldata__row">
+            <div class="personaldata-menu">
+               <div class="personaldata-menu__person">
+                  <i class="btn__icon personaldata-menu__icon icon-user"></i>
+                  <div class="personaldata-menu__text-block">
+                     <div class="personaldata-menu__name">Иванов Иван</div>
+                     <a href="mailto:Ivanov@gmail.com" class="personaldata-menu__email">Ivanov@gmail.com</a>
+                     <a href="tel:+79885595555" class="personaldata-menu__tell">+ 7 (988) 559-55-55</a>
+                  </div>
+               </div>
+               <div class="personaldata-menu__menu">
+                  <a href="##" class="personaldata-menu__list">
+                     <i class="btn__icon personaldata-menu__list-icon icon-list"></i>
+                     <span>Мои заказы</span>
+                  </a>
+                  <a href="##" class="personaldata-menu__list">
+                     <i class="btn__icon personaldata-menu__list-icon icon-heart"></i>
+                     <span>Мои желания</span>
+                  </a>
+                  <a href="##" class="personaldata-menu__list">
+                     <i class="btn__icon personaldata-menu__list-icon icon-message"></i>
+                     <span>Мои отзывы</span>
+                  </a>
+               </div>
+               <a href="##" class="personaldata-menu__deleted">
+                  <i class="btn__icon personaldata-menu__icon-close icon-close"></i>
+                  <span>Удалить аккаунт</span>
+               </a>
+            </div>
+            <div class="personaldata-inform my-reviews">
+               <div class="personaldata-inform__top-row">
+                  <h1 class="personaldata-inform__title">Мои отзывы</h1>
+                  <a href="##" class="personaldata-inform__exit">
+                     <i class="btn__icon personaldata-inform__icon-exit icon-exit"></i>
+                     <span>Выход</span>
+                  </a>
+               </div>
+               <div class="my-reviews__items">
+                  <div class="my-reviews__item">
+                     <div class="my-reviews__item-left">
+                        <img src="img/demo/image9.jpg" alt="" class="my-reviews__item-img">
+                        <div class="my-reviews__item-text">Электросамоката Xiaomi Mi Electric Scooter 1s Black
+                           (DDHBC05NEB)
+                        </div>
+                     </div>
+                     <a href="" class="my-reviews__btn btn light-btn">
+                        Посмотреть отзыв
+                     </a>
+                  </div>
+                  <div class="my-reviews__item">
+                     <div class="my-reviews__item-left">
+                        <img src="img/demo/image9.jpg" alt="" class="my-reviews__item-img">
+                        <div class="my-reviews__item-text">Электросамоката Xiaomi Mi Electric Scooter 1s Black
+                           (DDHBC05NEB)
+                        </div>
+                     </div>
+                     <a href="" class="my-reviews__btn btn light-btn">
+                        Посмотреть отзыв
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+
+      @@include('_footer.html', {})
+      <!-- @//@include('_modal.html') -->
+   </div>
+
+   <script type="text/javascript" src="libs/swiper.js"></script>
+   <script type="text/javascript" src="js/script.js"></script>
+</body>

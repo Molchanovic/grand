@@ -1,0 +1,52 @@
+ .quantity-goods {
+	display: flex;
+	position: relative;
+	max-width: 100px;
+	margin: 0 auto;
+	.quantity-goods {
+		&__minus,
+		&__plus {
+			position: relative;
+			cursor: pointer;
+			top: -2px;
+			i {
+				width: 11px;
+				height: 11px;
+				//background-color: $color-orange;
+				left: 6px;
+				top: 10px;
+			}
+			input {
+				font-size: 0;
+				border: none;
+				width: 23px;
+				height: 23px;
+				border-radius: 50%;
+				//background: $color-light-yellow;
+			}
+		}
+
+		&__minus {
+		}
+
+		&__plus {
+		}
+
+		&__count {
+			text-align: center;
+			width: 100%;
+			//border: 1px solid $color-light-grey;
+			border-radius: 1px;
+			//font-size: (20 / $f-size) + em;
+			//max-width: 34px;
+			margin: 0 auto;
+			//padding: 2px 1px 0 0;
+			&::-webkit-outer-spin-button,
+			&::-webkit-inner-spin-button {
+				display: none;
+				-webkit-appearance: none;
+				margin: 0;
+			}
+		}
+	}
+}

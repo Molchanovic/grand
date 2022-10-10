@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html', {
+"title":"Доставка и оплата - gofree",
+})
+
+<body>
+   <div class="wrapper" id="wrapper">
+
+      @@include('_header.html', {})
+      <ul class="container breadcrumbs">
+         <li class="breadcrumbs__item breadcrumbs__item_home">
+            <a href="/"><i class="breadcrumbs__icon icon-home"></i></a>
+         </li>
+         <li class="breadcrumbs__item breadcrumbs__item_active">
+            Доставка и оплата
+         </li>
+      </ul>
+      <main class="container delivery-pay">
+         <h1 class="delivery-pay__title">Доставка и оплата</h1>
+         <div class="row delivery-pay__row">
+            <div class="delivery-pay__delivery-block">
+               <h2 class="delivery-pay__delivery-title">Доставка</h2>
+               <div class="delivery-pay__delivery-subtitle">Доставка по всей территории РФ</div>
+               <div class="delivery-pay__delivery-row">
+                  <div class="delivery-pay__delivery-left">
+                     <img src="img/iconsprite/sdec.svg" alt="" class="delivery-pay__delivery-img">
+                     <div class="delivery-pay__delivery-block-text">
+                        <h3 class="delivery-pay__delivery-title-text">Доставка в отделение СДЕК</h3>
+                        <div class="delivery-pay__delivery-text">Стоимость доставки: <br>
+                           < 15кг- около 300руб <br> > 15кг - около 1000руб
+                        </div>
+                        <div class="delivery-pay__delivery-text delivery-pay__delivery-text_grey">
+                           *Более точный расчет при оформлении заказа
+                        </div>
+                     </div>
+                  </div>
+                  <div class="delivery-pay__delivery-right">
+                     <img src="img/iconsprite/deliverman.svg" alt="" class="delivery-pay__delivery-img">
+                     <div class="delivery-pay__delivery-block-text">
+                        <h3 class="delivery-pay__delivery-title-text">Доставка курьером</h3>
+                        <div class="delivery-pay__delivery-text">при заказе от 100 руб.</div>
+                     </div>
+
+                  </div>
+               </div>
+
+            </div>
+            <div class="delivery-pay__pay-block">
+               <h2 class="delivery-pay__delivery-title">Оплата</h2>
+               <div class="delivery-pay__pay-items">
+                  <div class="delivery-pay__pay-item">
+                     <img src="img/iconsprite/smartphone.svg" alt="" class="delivery-pay__pay-img">
+                     <div class="delivery-pay__pay-text">Онлайн оплата</div>
+                  </div>
+
+                  <div class="delivery-pay__pay-item">
+                     <img src="img/iconsprite/payment-method.svg" alt="" class="delivery-pay__pay-img">
+                     <div class="delivery-pay__pay-text">Оплата при получении</div>
+                  </div>
+
+                  <div class="delivery-pay__pay-item">
+                     <img src="img/iconsprite/invoice.svg" alt="" class="delivery-pay__pay-img">
+                     <div class="delivery-pay__pay-text">Счет предприятия</div>
+                  </div>
+               </div>
+
+
+
+            </div>
+         </div>
+      </main>
+
+      @@include('_footer.html', {})
+      <!-- @//@include('_modal.html') -->
+
+   </div>
+
+   <script type="text/javascript" src="libs/swiper.js"></script>
+   <script type="text/javascript" src="js/script.js"></script>
+
+</body>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html', {
+"title":"Категории - gofree",
+})
+
+
+<body>
+	<div class="wrapper" id="wrapper">
+
+
+		@@include('_header.html', {})
+		<ul class="container breadcrumbs">
+			<li class="breadcrumbs__item breadcrumbs__item_home">
+				<a href="/"><i class="breadcrumbs__icon icon-home"></i></a>
+			</li>
+			<li class="breadcrumbs__item breadcrumbs__item_active">
+				Категории
+			</li>
+		</ul>
+		<main class="container">
+			<h1>Двери</h1>
+			<section class="row categories">
+				<a href="##" class="categories__item">
+					<div class="categories__img">
+						<img src="img/demo/categories/1.jpg" alt="">
+					</div>
+					<h3 class="categories__h3">Межкомнатные двери</h3>
+				</a>
+				<a href="##" class="categories__item">
+					<div class="categories__img">
+						<img src="img/demo/categories/2.jpg" alt="">
+					</div>
+					<h3 class="categories__h3">Входные двери</h3>
+				</a>
+				<a href="##" class="categories__item">
+					<div class="categories__img">
+						<img src="img/demo/categories/3.jpg" alt="">
+					</div>
+					<h3 class="categories__h3">Складные двери</h3>
+				</a>
+				<a href="##" class="categories__item">
+					<div class="categories__img">
+						<img src="img/demo/categories/4.jpg" alt="">
+					</div>
+					<h3 class="categories__h3">Раздвижные двери</h3>
+				</a>
+				<a href="##" class="categories__item">
+					<div class="categories__img">
+						<img src="img/demo/categories/5.jpg" alt="">
+					</div>
+					<h3 class="categories__h3">Арки и порталы</h3>
+				</a>
+				<a href="##" class="categories__item">
+					<div class="categories__img">
+						<img src="img/demo/categories/6.jpg" alt="">
+					</div>
+					<h3 class="categories__h3">Для бани и сауны</h3>
+				</a>
+				<a href="##" class="categories__item">
+					<div class="categories__img">
+						<img src="img/demo/categories/7.jpg" alt="">
+					</div>
+					<h3 class="categories__h3">Противопожарные двери</h3>
+				</a>
+				<a href="##" class="categories__item">
+					<div class="categories__img">
+						<img src="img/demo/categories/8.jpg" alt="">
+					</div>
+					<h3 class="categories__h3">Фурнитура для дверей</h3>
+				</a>
+
+			</section>
+			<section class="cards">
+				<div class="row cards__row">
+					<h2 class="cards__h2">Просмотренные товары</h2>
+					<div class="cards__arrow arrow">
+						<div class="arrow__prev">
+							<i class="icon-polygon"></i>
+						</div>
+						<div class="arrow__next">
+							<i class="icon-polygon"></i>
+						</div>
+
+
+					</div>
+				</div>
+
+				<div class="swiper-container cards-slaider">
+					<div class="swiper-wrapper cards__list">
+						<div class="swiper-slide cards__item">
+							@@include('_card-product.html')
+						</div>
+						<div class="swiper-slide cards__item">
+							@@include('_card-product.html')
+						</div>
+						<div class="swiper-slide cards__item">
+							@@include('_card-product.html')
+						</div>
+						<div class="swiper-slide cards__item">
+							@@include('_card-product.html')
+						</div>
+						<div class="swiper-slide cards__item">
+							@@include('_card-product.html')
+						</div>
+						<div class="swiper-slide cards__item">
+							@@include('_card-product.html')
+						</div>
+
+					</div>
+				</div>
+
+			</section>
+		</main>
+
+
+
+		@@include('_footer.html', {})
+		<!-- @//@include('_modal.html') -->
+
+	</div>
+
+
+	<script type="text/javascript" src="libs/swiper.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+
+
+
+</body>
+
+</html>

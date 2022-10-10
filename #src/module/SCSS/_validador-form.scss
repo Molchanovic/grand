@@ -1,0 +1,24 @@
+form {
+	.input-error {
+		border: 1px solid red !important;
+		&-text {
+			color: red;
+			&.regular-email,
+			&.min6,
+			&.cyrillic,
+			&.password-mismatch,
+			&.user-not-found {
+				display: none;
+			}
+		}
+		&.input-regularEmail + .input-error-group .regular-email,
+		&.input-password-mismatch + .input-error-group .password-mismatch,
+		&.input-min6 + .input-error-group .min6,
+		&.input-cyrillic + .input-error-group .cyrillic {
+			display: block;
+		}
+	}
+	.user-not-found-true {
+		display: block;
+	}
+}

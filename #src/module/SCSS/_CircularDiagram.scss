@@ -1,0 +1,49 @@
+//Круговая диаграмма //!Сниппет "!CircularDiagram"
+.canvas {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 800px;
+	transform: rotate(-65deg);
+	.unit {
+		fill: none;
+		stroke-width: 8;
+		animation-name: render;
+		animation-duration: 2.5s;
+		transition-property: all;
+		transition-duration: 1.5s;
+	}
+	.unit:hover {
+		//opacity: 0.8;
+		stroke-width: 10;
+	}
+	.hovered {
+		opacity: 0.8;
+		stroke-width: 10;
+	}
+
+	.unit:nth-child(2) {
+		stroke: #1ac768;
+		//stroke-dasharray: 75 100;
+		// stroke-dashoffset: 135;
+	}
+
+	.unit:nth-child(1) {
+		stroke: #ece8e8;
+		stroke-dasharray: 100 100;
+		// stroke-dashoffset: 135;
+	}
+
+	// .unit:nth-child(3) {
+	//   stroke: #ffc7ec;
+	//   stroke-dasharray: 11 100;
+	// stroke-dashoffset: -19
+	// }
+	@keyframes render {
+		0% {
+			stroke-dasharray: 0 100;
+		}
+	}
+
+	/* Далее ещё четыре секции по аналогии */
+}

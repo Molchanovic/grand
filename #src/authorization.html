@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html', {
+"title":"Авторизация - gofree",
+})
+
+<body>
+	<div class="wrapper" id="wrapper">
+
+		@@include('_header.html', {})
+		<main class="container">
+			<form class="authorization">
+				<h1 class="authorization__title">Авторизация</h1>
+				<div class="authorization__form">
+					<div class="authorization__text">Email</div>
+					<input type="email" class="form-input authorization__input">
+				</div>
+				<div class="authorization__text">Пароль</div>
+				<div class="authorization__form">
+					<input type="password" class="form-input authorization__input">
+				</div>
+				<div class="authorization__row">
+					<button type="submit" class="btn authorization__btn">Войти</button>
+					<a href="##" class="authorization__forgot">Забыли пароль?</a>
+				</div>
+				<div class="authorization__account">
+					У вас ещe нет аккаунта?
+					<a href="##" class="authorization__create">Создать аккаунт</a>
+				</div>
+			</form>
+		</main>
+		@@include('_footer.html', {})
+		<!-- @//@include('_modal.html') -->
+	</div>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>

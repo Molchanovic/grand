@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html', {
+"title":"Оформление заказа - gofree",
+})
+
+<body>
+	<div class="wrapper" id="wrapper">
+
+		@@include('_header.html', {})
+		<main class="container basket">
+			<div class="basket__top page-top">
+				<div class="row page-top__row">
+					<h1 class="page-top__title">Оформление заказа</h1>
+					<div class="row page-top__come-back come-back">
+						<a href="##" class="come-back__text">
+							<i class="come-back__icon icon-arrow"></i>
+							Вернуться к покупкам
+						</a>
+					</div>
+				</div>
+			</div>
+			<form action="" class="row basket_row">
+				<div class="basket__products ordering">
+					<ol class="ordering__list">
+						<div class="ordering__item">
+							<!--ordering__item_disabled для недоступных полей, ordering__item_full для заполненных полей -->
+							<div class="ordering__title">
+								<h2>Контактаная информация</h2>
+							</div>
+
+							<div class="row ordering__value data-value data-value_none">
+								<!--для готовых полей убрать класс data-value_none -->
+								<ul class="data-value__list">
+									<li class="data-value__item">Иванов Иван Иванович</li>
+									<li class="data-value__item">+7 (495) 321-64-96</li>
+									<li class="data-value__item">Ivanov@gmail.com</li>
+								</ul>
+								<div class="btn light-btn data-value__btn">Изменить</div>
+							</div>
+							<div class="ordering__body">
+								<div class="ordering__data">
+									<div class="row ordering__form">
+										<div class="form ordering__input-block">
+											<div class="form__inscription ordering__name">ФИО</div>
+											<input type="text" class="form-input ordering__input" placeholder="">
+										</div>
+										<div class="form ordering__input-block">
+											<div class="form__inscription ordering__name">Номер телфона</div>
+											<input type="phone" class="form-input tel ordering__input" placeholder="">
+										</div>
+										<div class="form ordering__input-block">
+											<div class="form__inscription ordering__name">Email</div>
+											<input type="email" class="form-input ordering__input" placeholder="">
+										</div>
+									</div>
+									<div class="btn ordering__btn">Продолжить оформление</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="ordering__item">
+							<!--ordering__item_disabled для недоступных полей, ordering__item_full для заполненных полей -->
+							<div class="ordering__title">
+								<h2>Выбор способа доставки</h2>
+							</div>
+
+							<div class="row ordering__value data-value data-value_none">
+								<!--для готовых полей убрать класс data-value_none -->
+								<ul class="data-value__list">
+									<li class="data-value__item">Москва</li>
+									<li class="data-value__item">Доставка курьером</li>
+									<li class="data-value__item">20.04.2021</li>
+									<li class="data-value__item">пр. Центральный 25</li>
+									<li class="data-value__item">Иванов Иван Иванович</li>
+								</ul>
+								<div class="btn light-btn data-value__btn">Изменить</div>
+							</div>
+							<div class="ordering__body">
+								<div class="ordering__data">
+									<div class="row ordering__form">
+
+										<div class="ordering__geolocation">
+											<label class="select ordering__select" for="slct">
+												<select id="slct" required="required" class="form-input">
+													<option value="#" selected="selected">Москва</option>
+													<option value="#">One</option>
+													<option value="#">Two</option>
+													<option value="#">Three</option>
+													<option value="#">Four</option>
+													<option value="#">Five</option>
+													<option value="#">Six</option>
+													<option value="#">Seven</option>
+												</select>
+												<i class="select__icon icon-polygon"></i>
+											</label>
+										</div>
+
+										<div class="ordering__delivery ordering-delivery">
+											<div class="ordering-delivery__nav">
+
+												<div class="checkbox ordering-delivery__item">
+													<input type="radio" id="cdek" name="delivery" />
+													<label for="cdek">
+														<div class="ordering-delivery__label">
+															<div class="ordering-delivery__icon">
+																<i class="icon-item"></i>
+															</div>
+
+															<div class="ordering-delivery__block">
+																<div class="ordering-delivery__logo">
+																	<img src="img/demo/ordering-delivery/cdek.svg" alt="">
+																</div>
+																<div class="ordering-delivery__name">
+																	Доставка в отделение СДЕК
+																</div>
+															</div>
+														</div>
+													</label>
+												</div>
+												<div class="checkbox ordering-delivery__item">
+													<input type="radio" id="courier" name="delivery" />
+													<label for="courier">
+														<div class="ordering-delivery__label">
+															<div class="ordering-delivery__icon">
+																<i class="icon-item"></i>
+															</div>
+
+															<div class="ordering-delivery__block">
+																<div class="ordering-delivery__logo">
+																	<img src="img/demo/ordering-delivery/courier.svg" alt="">
+																</div>
+																<div class="ordering-delivery__name">
+																	Доставка курьером
+																</div>
+															</div>
+														</div>
+													</label>
+												</div>
+
+
+
+											</div>
+											<div class="ordering-delivery__content">
+
+												<div class="form ordering__input-block">
+													<div class="form__inscription ordering__name">Дата доставки</div>
+													<input type="date" id="date"
+														class="form-input ordering__input ordering__input_date" value=""
+														name="person-date">
+												</div>
+
+												<div class="form ordering__input-block">
+													<div class="form__inscription ordering__name">Адрес доставки</div>
+													<div class="ordering__input-row ordering__input-row_address">
+														<input type="text" class="form-input" placeholder="Улица" name="">
+														<input type="text" class="form-input" placeholder="Дом" name="">
+														<input type="text" class="form-input" placeholder="Кв." name="">
+														<input type="text" class="form-input" placeholder="Этаж" name="">
+														<div class="checkbox ordering__input_checkbox">
+															<input type="checkbox" id="vol565" name="cc" />
+															<label for="vol565"><span></span></label>
+															Есть лифт
+														</div>
+													</div>
+
+												</div>
+
+
+												<div class="ordering__form">
+													<div class="row ordering__form">
+														<div class="form ordering__input-block">
+															<div class="form__inscription ordering__name">Фамилия</div>
+															<input type="text" class="form-input ordering__input" placeholder="">
+														</div>
+														<div class="form ordering__input-block">
+															<div class="form__inscription ordering__name">Имя</div>
+															<input type="text" class="form-input ordering__input" placeholder="">
+														</div>
+														<div class="form ordering__input-block">
+															<div class="form__inscription ordering__name">Отчество</div>
+															<input type="text" class="form-input ordering__input" placeholder="">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+
+
+									</div>
+									<div class="btn ordering__btn">Продолжить оформление</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="ordering__item">
+							<!--ordering__item_disabled для недоступных полей-->
+							<div class="ordering__title">
+								<h2>Выбор способа оплаты</h2>
+							</div>
+							<div class="ordering__body">
+								<div class="ordering__data">
+									<div class="row ordering__form">
+
+
+
+										<div class="ordering__delivery ordering-delivery">
+											<div class="ordering-delivery__nav">
+
+												<div class="checkbox ordering-delivery__item">
+													<input type="radio" id="payOnline" name="payment" />
+													<label for="payOnline">
+														<div class="ordering-delivery__label">
+															<div class="ordering-delivery__icon">
+																<i class="icon-item"></i>
+															</div>
+
+															<div class="ordering-delivery__block">
+																<div class="ordering-delivery__logo">
+																	<img src="img/iconsprite/payment-method.svg" alt="">
+																</div>
+																<div class="ordering-delivery__name">
+																	Онлайн оплата
+																</div>
+															</div>
+														</div>
+													</label>
+												</div>
+												<div class="checkbox ordering-delivery__item">
+													<input type="radio" id="payObtaining" name="payment" />
+													<label for="payObtaining">
+														<div class="ordering-delivery__label">
+															<div class="ordering-delivery__icon">
+																<i class="icon-item"></i>
+															</div>
+
+															<div class="ordering-delivery__block">
+																<div class="ordering-delivery__logo">
+																	<img src="img/iconsprite/invoice.svg" alt="">
+																</div>
+																<div class="ordering-delivery__name">
+																	Оплата при получении
+																</div>
+															</div>
+														</div>
+													</label>
+												</div>
+												<div class="checkbox ordering-delivery__item">
+													<input type="radio" id="payCheck" name="payment" />
+													<label for="payCheck">
+														<div class="ordering-delivery__label">
+															<div class="ordering-delivery__icon">
+																<i class="icon-item"></i>
+															</div>
+
+															<div class="ordering-delivery__block">
+																<div class="ordering-delivery__logo">
+																	<img src="img/iconsprite/smartphone.svg" alt="">
+																</div>
+																<div class="ordering-delivery__name">
+																	Счет предприятия
+																</div>
+															</div>
+														</div>
+													</label>
+												</div>
+											</div>
+
+
+
+										</div>
+									</div>
+
+
+
+								</div>
+								<div class="btn ordering__btn">Продолжить оформление</div>
+							</div>
+						</div>
+					</ol>
+				</div>
+
+
+
+
+
+
+
+
+
+				<div class="basket__total basket-value">
+					<div class="basket-value__wrapper">
+						<div class="basket-value__products">
+							<ul class="basket-value__list">
+								<li class="basket-value__img">
+									<img src="img/demo/product/1.jpg" alt="">
+								</li>
+								<li class="basket-value__img">
+									<img src="img/demo/product/2.jpg" alt="">
+								</li>
+								<!-- <li class="basket-value__img">
+						<img src="img/demo/product/3.jpg" alt="">
+					</li>
+					<li class="basket-value__img">
+						<img src="img/demo/product/1.jpg" alt="">
+					</li>
+					<li class="basket-value__img">
+						<img src="img/demo/product/4.jpg" alt="">
+					</li> -->
+							</ul>
+							<div class="basket-value__btn basket-value__btn_products">
+								<a href="##" class="btn light-btn">Изменить</a>
+							</div>
+
+						</div>
+
+						<div class="basket-value__title">
+							<h2>Итого:</h2>
+						</div>
+						<div class="basket-value__sum">
+							<div class="basket-value__name">2 товара на сумму:</div>
+							<div class="basket-value__value">20 000<span>₽</span></div>
+						</div>
+						<div class="basket-value__delivery">
+							<div class="basket-value__name">Стоимость доставки:</div>
+							<div class="basket-value__value">300<span>₽</span></div>
+						</div>
+						<hr>
+						<div class="basket-value__total">
+							<div class="basket-value__name">К оплате:</div>
+							<div class="basket-value__value basket-value__value_total">10 300<span>₽</span></div>
+						</div>
+						<div class="basket-value__btn">
+							<button type="submit" class="btn">Оформить заказ</button>
+						</div>
+					</div>
+				</div>
+
+
+			</form>
+
+
+
+
+		</main>
+		@@include('_footer.html', {})
+		@@include('_modal.html')
+	</div>
+	<script type="text/javascript" src="libs/swiper.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>

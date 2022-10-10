@@ -1,0 +1,29 @@
+.system-block {
+	justify-content: space-between;
+	align-items: center;
+	&__item {
+		width: fit-content !important;
+		position: relative;
+		& > div {
+			border: 1px dashed #7b61ff;
+			box-sizing: border-box;
+			border-radius: 5px;
+			margin-right: 15px;
+			margin-bottom: 15px;
+			padding: 25px;
+			height: min-content;
+		display: flex;
+		flex-direction: column;
+		.btn{
+			margin-bottom: 15px;
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+		}
+		&:nth-child(3n) > div,
+		&:last-child > div {
+			margin-right: 0;
+		}
+	}
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html', {
+"title":"Регистрация - gofree",
+})
+
+<body>
+   <div class="wrapper" id="wrapper">
+
+      @@include('_header.html', {})
+      <main class="container">
+         <form class="authorization">
+            <h1 class="authorization__title">Регистрация</h1>
+            <div class="authorization__form">
+               <div class="authorization__text">Email</div>
+               <input type="email" class="form-input authorization__input">
+            </div>
+            <div class="authorization__form">
+               <div class="authorization__text">Телефон</div>
+               <input type="tel" class="tel form-input authorization__input">
+            </div>
+            <div class="authorization__form">
+               <div class="authorization__text">Пароль</div>
+               <input type="password" minlength="8" maxlength="128" class="form-input authorization__input">
+            </div>
+            <div class="registration__form">
+               <div class="authorization__text">Подтвердить</div>
+               <input type="password" maxlength="128" class="form-input authorization__input">
+            </div>
+            <button type="submit" class="btn authorization__btn authorization__btn_authoriz">Продолжить</button>
+            <div class="authorization__account">
+               У вас уже есть аккаунт?
+               <a href="##" class="authorization__create">Войти</a>
+            </div>
+         </form>
+      </main>
+      @@include('_footer.html', {})
+      <!-- @//@include('_modal.html') -->
+   </div>
+   <script type="text/javascript" src="js/script.js"></script>
+</body>

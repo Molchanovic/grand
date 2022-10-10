@@ -1,0 +1,26 @@
+.accordion {
+	cursor: pointer;
+	transition: 0.5s;
+	position: relative;
+	&__active,
+	&:after {
+		content: "";
+		position: absolute;
+		top: 42%;
+		right: 0;
+		border: 5px solid transparent; 
+		border-top: 6px solid #6c6c6c;
+	}
+	&_active:after {
+		content: "";
+		border: 5px solid transparent; 
+		border-bottom: 6px solid #6c6c6c;
+		border-top: none;
+	}
+}
+
+.panel {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s ease-out;
+}

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html', {
+"title":"Главная - gofree",
+})
+
+
+<body>
+	<div class="wrapper" id="wrapper">
+
+
+		@@include('_header.html', {})
+
+		<main class="container" id="homepage">
+			<section class="banners">
+				<div class="row banners__row">
+					<div class="swiper-container banners-swiper">
+						<div class="swiper-wrapper banners__list">
+							<div class="swiper-slide banners__item">
+								<a href="##"><img src="img/demo/banners.jpg" alt=""></a>
+							</div>
+							<div class="swiper-slide banners__item">
+								<a href="##"><img src="img/demo/banners.jpg" alt=""></a>
+							</div>
+							<div class="swiper-slide banners__item">
+								<a href="##"><img src="img/demo/banners.jpg" alt=""></a>
+							</div>
+							<div class="swiper-slide banners__item">
+								<a href="##"><img src="img/demo/banners.jpg" alt=""></a>
+							</div>
+						</div>
+					</div>
+					<div class="banners__pagination"></div>
+				</div>
+			</section>
+			<section class="cards swiper-container cards-slaider">
+				<div class="row cards__row">
+					<h2 class="cards__h2">Рекомендации на основе ваших просмотров</h2>
+					<div class="cards__arrow arrow">
+						<div class="arrow__prev">
+							<i class="icon-polygon"></i>
+						</div>
+						<div class="arrow__next">
+							<i class="icon-polygon"></i>
+						</div>
+
+
+					</div>
+				</div>
+
+				<div class="swiper-wrapper cards__list">
+						<div class="swiper-slide cards__item">
+							@@include('_card-product.html')
+						</div>
+						<div class="swiper-slide cards__item">
+							@@include('_card-product.html')
+						</div>
+						<div class="swiper-slide cards__item">
+							@@include('_card-product.html')
+						</div>
+						<div class="swiper-slide cards__item">
+							@@include('_card-product.html')
+						</div>
+						<div class="swiper-slide cards__item">
+							@@include('_card-product.html')
+						</div>
+						<div class="swiper-slide cards__item">
+							@@include('_card-product.html')
+						</div>
+
+					</div>
+
+			</section>
+			<section class="cards swiper-container cards-slaider">
+				<div class="row cards__row">
+					<h2 class="cards__h2">Горячие новинки</h2>
+					<div class="cards__arrow arrow">
+						<div class="arrow__prev">
+							<i class="icon-polygon"></i>
+						</div>
+						<div class="arrow__next">
+							<i class="icon-polygon"></i>
+						</div>
+
+
+					</div>
+				</div>
+
+				<div class="swiper-wrapper cards__list">
+						<div class="swiper-slide cards__item">
+							@@include('_card-product.html')
+						</div>
+						<div class="swiper-slide cards__item">
+							@@include('_card-product.html')
+						</div>
+						<div class="swiper-slide cards__item">
+							@@include('_card-product.html')
+						</div>
+						<div class="swiper-slide cards__item">
+							@@include('_card-product.html')
+						</div>
+						<div class="swiper-slide cards__item">
+							@@include('_card-product.html')
+						</div>
+						<div class="swiper-slide cards__item">
+							@@include('_card-product.html')
+						</div>
+
+					</div>
+
+			</section>
+			<section class="cards swiper-container cards-slaider">
+				<div class="row cards__row">
+					<h2 class="cards__h2">Популярное</h2>
+					<div class="cards__arrow arrow">
+						<div class="arrow__prev">
+							<i class="icon-polygon"></i>
+						</div>
+						<div class="arrow__next">
+							<i class="icon-polygon"></i>
+						</div>
+
+
+					</div>
+				</div>
+
+				<div class="swiper-wrapper cards__list">
+						<div class="swiper-slide cards__item">
+							@@include('_card-product.html')
+						</div>
+						<div class="swiper-slide cards__item">
+							@@include('_card-product.html')
+						</div>
+						<div class="swiper-slide cards__item">
+							@@include('_card-product.html')
+						</div>
+						<div class="swiper-slide cards__item">
+							@@include('_card-product.html')
+						</div>
+						<div class="swiper-slide cards__item">
+							@@include('_card-product.html')
+						</div>
+						<div class="swiper-slide cards__item">
+							@@include('_card-product.html')
+						</div>
+
+					</div>
+
+			</section>
+			<section class="cards swiper-container cards-slaider">
+				<div class="row cards__row">
+					<h2 class="cards__h2">Акции</h2>
+					<div class="cards__arrow arrow">
+						<div class="arrow__prev">
+							<i class="icon-polygon"></i>
+						</div>
+						<div class="arrow__next">
+							<i class="icon-polygon"></i>
+						</div>
+
+
+					</div>
+				</div>
+
+				<div class="swiper-wrapper cards__list">
+						<div class="swiper-slide cards__item">
+							@@include('_card-product.html')
+						</div>
+						<div class="swiper-slide cards__item">
+							@@include('_card-product.html')
+						</div>
+						<div class="swiper-slide cards__item">
+							@@include('_card-product.html')
+						</div>
+						<div class="swiper-slide cards__item">
+							@@include('_card-product.html')
+						</div>
+						<div class="swiper-slide cards__item">
+							@@include('_card-product.html')
+						</div>
+						<div class="swiper-slide cards__item">
+							@@include('_card-product.html')
+						</div>
+
+					</div>
+
+			</section>
+			<section class="cards cards_news">
+				<div class="row cards__row">
+					<div class="cards__h2">
+						<h2>Новости</h2>
+						<a href="##" class="cards__link">Смотреть все</a>
+					</div>
+
+					<div class="cards__arrow arrow">
+						<div class="arrow__prev">
+							<i class="icon-polygon"></i>
+						</div>
+
+						<div class="arrow__next">
+							<i class="icon-polygon"></i>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-container cards-slaider-news">
+					<div class="swiper-wrapper cards__list">
+						<a href="##" class="swiper-slide cards__item">
+							<div class="card-news">
+								<img class="card-news__img" src="img/demo/review.jpg" alt="">
+								<div class="card-news__text-block">
+									<h4 class="card-news__h4">Что подарить хозяйке дома? 7 идей полезных кухонных подарков</h4>
+									<div class="card-news__text">
+										Итак, тебя пригласили в гости. А ты уже решил, что подарить хозяевам дома? Ведь идти в гости
+										с пустыми руками ...
+									</div>
+									<div class="card-news__data">
+										5 апреля 2021
+									</div>
+								</div>
+								
+
+
+							</div>
+						</a>
+						<a href="##" class="swiper-slide cards__item">
+							<div class="card-news">
+								<img class="card-news__img" src="img/demo/review.jpg" alt="">
+								<div class="card-news__text-block">
+									<h4 class="card-news__h4">Что подарить хозяйке дома? 7 идей полезных кухонных подарков</h4>
+									<div class="card-news__text">
+										Итак, тебя пригласили в гости. А ты уже решил, что подарить хозяевам дома? Ведь идти в гости
+										с пустыми руками ...
+									</div>
+									<div class="card-news__data">
+										5 апреля 2021
+									</div>
+								</div>
+
+
+							</div>
+						</a>
+						<a href="##" class="swiper-slide cards__item">
+							<div class="card-news">
+								<img class="card-news__img" src="img/demo/review.jpg" alt="">
+								<div class="card-news__text-block">
+									<h4 class="card-news__h4">Что подарить хозяйке дома? 7 идей полезных кухонных подарков</h4>
+									<div class="card-news__text">
+										Итак, тебя пригласили в гости. А ты уже решил, что подарить хозяевам дома? Ведь идти в гости
+										с пустыми руками ...
+									</div>
+									<div class="card-news__data">
+										5 апреля 2021
+									</div>
+								</div>
+
+
+							</div>
+						</a>
+						<a href="##" class="swiper-slide cards__item">
+							<div class="card-news">
+								<img class="card-news__img" src="img/demo/review.jpg" alt="">
+								<div class="card-news__text-block">
+									<h4 class="card-news__h4">Что подарить хозяйке дома? 7 идей полезных кухонных подарков</h4>
+									<div class="card-news__text">
+										Итак, тебя пригласили в гости. А ты уже решил, что подарить хозяевам дома? Ведь идти в гости
+										с пустыми руками ...
+									</div>
+									<div class="card-news__data">
+										5 апреля 2021
+									</div>
+								</div>
+
+
+							</div>
+						</a>
+
+					</div>
+				</div>
+			</section>
+
+			
+		</main>
+
+
+
+		@@include('_footer.html', {})
+		<!-- @//@include('_modal.html') -->
+
+	</div>
+
+
+	<script type="text/javascript" src="libs/swiper.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	
+
+
+
+</body>
+
+</html>

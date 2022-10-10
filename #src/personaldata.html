@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html', {
+"title":"Персональные данные - gofree",
+})
+
+<body>
+   <div class="wrapper" id="wrapper">
+
+      @@include('_header.html', {})
+      <main class="container personaldata">
+         <div class="row personaldata__row">
+            <div class="personaldata-menu">
+               <div class="personaldata-menu__person">
+                  <i class="btn__icon personaldata-menu__icon icon-user"></i>
+                  <div class="personaldata-menu__text-block">
+                     <div class="personaldata-menu__name">Иванов Иван</div>
+                     <a href="mailto:Ivanov@gmail.com" class="personaldata-menu__email">Ivanov@gmail.com</a>
+                     <a href="tel:+79885595555" class="personaldata-menu__tell">+ 7 (988) 559-55-55</a>
+                  </div>
+               </div>
+               <div class="personaldata-menu__menu">
+                  <a href="##" class="personaldata-menu__list">
+                     <i class="btn__icon personaldata-menu__list-icon icon-list"></i>
+                     <span>Мои заказы</span>
+                  </a>
+                  <a href="##" class="personaldata-menu__list">
+                     <i class="btn__icon personaldata-menu__list-icon icon-heart"></i>
+                     <span>Мои желания</span>
+                  </a>
+                  <a href="##" class="personaldata-menu__list">
+                     <i class="btn__icon personaldata-menu__list-icon icon-message"></i>
+                     <span>Мои отзывы</span>
+                  </a>
+               </div>
+               <a href="##" class="personaldata-menu__deleted">
+                  <i class="btn__icon personaldata-menu__icon-close icon-close"></i>
+                  <span>Удалить аккаунт</span>
+               </a>
+            </div>
+            <div class="personaldata-inform">
+               <div class="personaldata-inform__top-row">
+                  <h1 class="personaldata-inform__title">Персональные данные</h1>
+                  <a href="##" class="personaldata-inform__exit">
+                     <i class="btn__icon personaldata-inform__icon-exit icon-exit"></i>
+                     <span>Выход</span>
+                  </a>
+               </div>
+               <form action="" class="personaldata-inform__form">
+                  <div class="personaldata-inform__section personal-data">
+                     <h2 class="personal-data__title">Личные данные</h2>
+
+                     <div class="personal-data__input-item">
+                        <div class="personal-data__input-place">ФИО:</div>
+                        <input placeholder="ФИО:" type="text" class="form-input personal-data__input">
+                        <a href="##"><i class="btn__icon personal-data__icon-input icon-pencil"></i></a>
+                     </div>
+                     <div class="personal-data__input-item">
+                        <div class="personal-data__input-place">Номер телефона:</div>
+                        <input placeholder="Номер телефона:" type="text" class="tel form-input personal-data__input">
+                        <a href="##"><i class="btn__icon personal-data__icon-input icon-pencil"></i></a>
+                     </div>
+                     <div class="personal-data__input-item">
+                        <div class="personal-data__input-place">Email:</div>
+                        <input placeholder="Email:" type="text" class="form-input personal-data__input">
+                        <a href="##"><i class="btn__icon personal-data__icon-input icon-pencil"></i></a>
+                     </div>
+                     <div class="personal-data__row">
+                        <div class="personal-data__date-block">
+                           <div class="personal-data__text">Дата рождения:</div>
+                           <input type="date" id="date" class="form-input personal-data__date" value="2" name="person-date">
+                        </div>
+
+                        <div class="personal-data__gender-block">
+                           <div class="personal-data__text">Пол:</div>
+                           <div class="personal-data__gender-radio">
+                              <div class="radio personal-data__gender">
+                                 <input type="radio" id="person-gender-1" name="gender">
+                                 <label for="person-gender-1"><span></span></label>
+                                 Женский
+                              </div>
+                              <div class="radio personal-data__gender">
+                                 <input type="radio" id="person-gender-2" name="gender">
+                                 <label class="radio personal__gender-lab" for="person-gender-2"><span></span></label>
+                                 Мужской
+                              </div>
+                           </div>
+                        </div>
+
+                     </div>
+                  </div>
+                  <div class="personaldata-inform__section contacts">
+                     <h2 class="personal-data__title">Контакты</h2>
+                     <div class="personal-data__input-item">
+                        <div class="personal-data__input-place">Email:</div>
+                        <input placeholder="Email:" type="text" class="form-input personal-data__input">
+                        <a href="##"><i class="btn__icon personal-data__icon-input icon-pencil"></i></a>
+                     </div>
+                     <div class="personal-data__input-item">
+                        <div class="personal-data__input-place">Номер телефона:</div>
+                        <input placeholder="Номер телефона:" type="text" class="tel form-input personal-data__input">
+                        <a href="##"><i class="btn__icon personal-data__icon-input icon-pencil"></i></a>
+                     </div>
+                     <a href="#popup-number" class="popup-link personal-data__add-input">
+                        <i class="btn__icon personal-data__icon-plus icon-plus"></i>
+                        <span>Добавить номер</span>
+                     </a>
+                  </div>
+                  <div class="personaldata-inform__section address">
+                     <h2 class="personal-data__title">Адреса доставки</h2>
+                     <div class="personal-data__input-item">
+                        <input type="text" class="form-input personal-data__input-full">
+                        <a href="##">
+                           <i
+                              class="btn__icon personal-data__icon-input personal-data__icon-input_left icon-pencil"></i>
+                           <i class="btn__icon personal-data__icon-close icon-close"></i></a>
+                     </div>
+                     <a href="#popup-adress" class="popup-link personal-data__add-input">
+                        <i class="btn__icon personal-data__icon-plus icon-plus"></i>
+                        <span>Добавить адрес</span>
+                     </a>
+                  </div>
+                  <div class="personaldata-inform__section bank-card">
+                     <h2 class="personal-data__title">Мои банковские карты</h2>
+                     <a href="#popup-card" class="popup-link personal-data__add-input">
+                        <i class="btn__icon personal-data__icon-plus icon-plus"></i>
+                        <span>Добавить карту</span>
+                     </a>
+                  </div>
+                  <div class="personaldata-inform__section person-authorization">
+                     <h2 class="personal-data__title">Авторизация</h2>
+                     <div class="personal-data__row-autoriz">
+                        <div class="personal-data__input-item">
+                           <div class="tel personal-data__input-place">Логин (телефон):</div>
+                           <input placeholder="Логин (телефон):" type="text"
+                              class="tel form-input personal-data__input">
+                           <a href="##"><i class="btn__icon personal-data__icon-input icon-pencil"></i></a>
+                        </div>
+                        <div class="personal-data__input-item">
+                           <div class="personal-data__input-place">Логин (Email):</div>
+                           <input placeholder="Логин (Email):" type="text" class="form-input personal-data__input">
+                           <a href="##"><i class="btn__icon personal-data__icon-input icon-pencil"></i></a>
+                        </div>
+                     </div>
+                     <a href="#popup-password" class="popup-link personal-data__add-input">
+                        <i class="btn__icon personal-data__icon-plus icon-pencil"></i>
+                        <span class="personal-data__dashed-span">Изменить пароль</span>
+                     </a>
+
+                  </div>
+
+               </form>
+            </div>
+
+
+         </div>
+      </main>
+      @@include('_footer.html', {})
+      @@include('_modal.html')
+   </div>
+
+   <script type="text/javascript" src="libs/swiper.js"></script>
+   <script type="text/javascript" src="js/script.js"></script>
+</body>
